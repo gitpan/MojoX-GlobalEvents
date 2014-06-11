@@ -12,7 +12,7 @@ use Scalar::Util qw(blessed);
 use base 'Exporter';
 our @EXPORT = qw(on publish);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 my %subscriber;
 
@@ -65,7 +65,7 @@ MojoX::GlobalEvents - A module to handle events
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

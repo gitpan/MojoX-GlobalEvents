@@ -19,15 +19,27 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "artistic_2",
   "NAME" => "MojoX::GlobalEvents",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.01",
+  "PREREQ_PM" => {
+    "File::Find::Rule" => 0,
+    "File::Spec" => 0,
+    "Mojolicious" => "4.0",
+    "Scalar::Util" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
 
-my %FallbackPrereqs = ();
+my %FallbackPrereqs = (
+  "File::Find::Rule" => 0,
+  "File::Spec" => 0,
+  "Mojolicious" => "4.0",
+  "Scalar::Util" => 0,
+  "Test::More" => 0
+);
 
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {

@@ -13,9 +13,14 @@ meta-spec:
   version: '1.4'
 name: MojoX-GlobalEvents
 requires:
+  File::Find::Rule: '0'
+  File::Spec: '0'
+  Mojolicious: '4.0'
+  Scalar::Util: '0'
+  Test::More: '0'
   perl: '5.010001'
 resources:
   bugtracker: http://github.com/reneeb/MojoX-GlobalEvents/issues
   homepage: http://github.com/reneeb/MojoX-GlobalEvents
   repository: http://github.com/reneeb/MojoX-GlobalEvents.git
-version: '0.01'
+version: '0.02'
